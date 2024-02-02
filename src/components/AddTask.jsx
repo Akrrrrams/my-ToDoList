@@ -1,18 +1,22 @@
-import{AddTaskModal,ADD_TASK_MODAL_ID} from "./AddTaskModal";
+import { AddTaskModal } from "./AddTaskModal";
+import { ADD_TASK_MODAL_ID } from "../constants";
 
 const AddTask = () => {
-  return <div className="mb-3">
-    <button 
-     className="btn btn-dark w-100"
-     type="button"
-     id="add-task-modal-trigger"
-     data-bs-toggle="modal"
-     data-bs-target={`#{ADD_TASK_MODAL_ID}`}
-     >
+  return (
+    <>
+      <button
+        className="btn btn-dark"
+        type="button"
+        id="add-task-modal-trigger"
+        data-bs-toggle="modal"
+        data-bs-target={`#${ADD_TASK_MODAL_ID}`}
+      >
         Add Task
-     </button>
-     AddTask</div>
-     ;
+      </button>
+
+      <AddTaskModal />
+    </>
+  );
 };
 
-export {AddTask};
+export { AddTask };

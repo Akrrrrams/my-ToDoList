@@ -18,6 +18,7 @@ body {
 
 #main-container {
   width: fit-content;
+  background-color: aquamarine;
 }
 
 .pointer {
@@ -43,4 +44,8 @@ body {
 
 .priority-icon {
   padding-right: 5px;
+}
+
+.sort-select {
+  width: fit-content;
 }

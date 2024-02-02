@@ -1,12 +1,16 @@
+import { AddTask } from "./components/AddTask";
 import { ClearTask } from "./components/ClearTask";
 import { Filters } from "./components/Filters";
-import { TaskInput } from "./components/TaskInput";
+import { Sort } from "./components/Sort";
 import { TaskList } from "./components/TaskList";
 
 function App() {
   return (
     <div id="main-container">
-      <TaskInput />
+      <div className="d-flex justify-content-between mb-3">
+        <Sort />
+        <AddTask />
+      </div>
       <TaskList />
       <Filters />
       <ClearTask />

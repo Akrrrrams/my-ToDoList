@@ -5,6 +5,7 @@ const TasksContext = createContext();
 const TasksContextProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("all");
+  const [sortOrder, setSortOrder] = useState("default");
 
   useEffect(() => {
     const tasksFromLocalStorage = JSON.parse(
@@ -67,6 +68,8 @@ const TasksContextProvider = ({ children }) => {
       value={{
         tasks,
         filter,
+        sortOrder,
+        setSortOrder,
         setFilter,
         addTask,
         deleteTask,
