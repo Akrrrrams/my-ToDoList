@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newTaskText {
+  width: 300px;
+}
+
+#main-container {
+  width: fit-content;
+}
+
+.pointer {
+  cursor: pointer;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.pointer:hover {
+  background-color: lightgray;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+.simple-input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.39);
+}
+
+.priority-icon {
+  padding-right: 5px;
+}
